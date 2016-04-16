@@ -6,6 +6,10 @@ typedef struct NODE {
     struct node *next;
 } node;
 
-//void printList(void);
+/* Function prototypes */
+node *createList();
+void destoryList(node *head);
+void add(node *head, char *data);
+void printList(node *head);
 
 #endif
