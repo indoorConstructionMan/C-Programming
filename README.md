@@ -15,3 +15,6 @@ Clean:
   -- once it's been run, and no longer want exe
 
   $ make clean
+
+##LINKEDLIST is now fully implemented. Just include .h .c files and include
+## .c file in compilation directive (refer to Makefile)
