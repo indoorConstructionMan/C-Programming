@@ -1,5 +1,5 @@
 make:
-	gcc -g -Wall main.c linkedList.c -o output
+	gcc -g -Wall main.c ./ll/linkedList.c -o output
 clean:
 	rm output.exe output.exe.stackdump
 run:

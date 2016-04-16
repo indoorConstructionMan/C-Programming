@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
-#include"linkedList.h"
+#include"./ll/linkedList.h"
 
 
 /* Starting point */
