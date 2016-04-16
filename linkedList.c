@@ -54,13 +54,13 @@ void add(node *head, char *myData){
 /*Takes the head of the node, and prints all elements in list*/
 void printList(node *head){
   node *current;
-
   current = head;
+
   while(1){
     if(current->next == NULL){
       break;
     } else {
-      printf("%s\n", current->data);
+      printf("%s.\n", current->data);
       current = (node*) current->next;
     }
   }
@@ -69,25 +69,23 @@ void printList(node *head){
 
 
 /*Insert at index index, placing myData there.
-* --TODO Don't really know why inserting at start is
-* a problem. It needs fixing
-*    ***Broken***
+* if index greater, set to end.
+* if 0 or less, add to front
+* else insert at position given current head node
 */
-void insert(node *head, int index, char *myData){
+void insert(node **head, int index, char *myData){
   node *current, *previous;
-  current = head;
+  current = *head;
 
   int length = strlen(myData);
   if(length > 50) length = 50;
   node *newNode = calloc(1, sizeof(node));
   strncpy(newNode->data, myData, length);
 
-  if(index > listLength(head)) add(head, myData);
+  if(index > listLength(*head)) add(*head, myData);
   else if (index <= 0){
-    /*This is the part that is broken. head isn't reassigned*/
+    *head = newNode;
     newNode->next = current;
-    head = newNode;
-    printf("Head data == %s\nHead Data next ==  %s\n", head->data, head->next->data);
   } else {
     int i;
     for(i=0; i<index; i++){
