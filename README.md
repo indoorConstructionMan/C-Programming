@@ -18,3 +18,6 @@ Clean:
 
 ##LINKEDLIST is now fully implemented. Just include .h .c files and include
 ## .c file in compilation directive (refer to Makefile)
+
+## project euler contains useful string function, prime number gen. read/writing
+## from file.
