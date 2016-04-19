@@ -12,7 +12,7 @@ typedef struct tree {
 
 
 tree *init();
-void printTree(tree *myTree);
+void printTree(tree *myTree, tree *myRoot);
 void insert(tree *myTree, int val);
 void destroyTree(tree *myTree);
 
