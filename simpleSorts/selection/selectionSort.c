@@ -6,10 +6,10 @@
 /*Iterate from sorted to end, grab index of min value
 swap value at grabbed index, with sorted index, increment
 sorted and then repeat until sorted = length of array*/
-void selectionSort(int *arr){
+void selectionSort(int *arr, int size){
   int sorted_index=0, current_index, min_index=0;
-  while(sorted_index < 11){
-    for(current_index=sorted_index; current_index<11; current_index++){
+  while(sorted_index < size){
+    for(current_index=sorted_index; current_index<size; current_index++){
       if(arr[current_index] < arr[min_index]){
         min_index = current_index;
       }
@@ -32,7 +32,7 @@ void selectionSort(int *arr){
 void testSelectionSort(){
   int test[11] = {4, 2, 8, 6, 9, 12, 32, 1, 0, 3, -3};
 
-  selectionSort(test);
+  selectionSort(test, sizeof(test)/sizeof(test[0]));
 
   int i;
   for(i=0; i<11; i++){
