@@ -1,8 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include"simpleSorts/selection/selectionSort.h"
+#include"sorting/bubble/bubbleSort.h"
 
 /* Starting point */
 int main(int argc, char** argv){
-  testSelectionSort();
+  testBubbleSort();
 }
