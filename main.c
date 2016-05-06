@@ -1,8 +1,10 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include"sorting/bubble/bubbleSort.h"
+#include<string.h>
+#include<stdbool.h>
 
 /* Starting point */
 int main(int argc, char** argv){
-  testBubbleSort();
+
+  return 1;
 }
