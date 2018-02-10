@@ -3,6 +3,7 @@
 #include<string.h>
 #include<stdbool.h>
 
+/*Testing if I can push from arch*/
 /* Starting point */
 int main(int argc, char** argv){
 
